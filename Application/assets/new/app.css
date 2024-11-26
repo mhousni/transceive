@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "Sansation Regular";
+  src: url("fonts/Sansation-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Sansation Bold";
+  src: url("fonts/Sansation-Bold.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Sansation Regular";
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+  font-family: "Sansation Bold";
+}
+
+a {
+  color: #000 !important;
+}
+
+.bg-primary {
+  background-color: #111350 !important;
+}
+
+.bg-primary-light {
+  background-color: #314195 !important;
+}
+
+.bg-secondary {
+  background-color: #EFF0F2 !important;
+}
+
+.text-primary {
+  color: #111350 !important;
+}
+
+.accordion-button {
+  font-size: 20px;
+  color: #000;
+}
+
+.accordion-button::before {
+  content: url(/images/l-dot.svg);
+  width: 40px;
+}
+
+section.slide {
+  background: url(/images/dots-corners.png) no-repeat;
+  background-position: top left;
+}
+
+.waves {
+  background: #111350;
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px; /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+
+.inner-header {
+  height: 39vh;
+  width: 100%;
+  margin: 0;
+  padding: 10px 0;
+  position: relative;
+  text-align: center;
+  background: linear-gradient(60deg, rgb(84, 58, 183) 0%, rgb(0, 172, 193) 100%);
+  color: white;
+}
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}/*# sourceMappingURL=app.css.map */
